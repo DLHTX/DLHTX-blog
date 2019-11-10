@@ -1,25 +1,12 @@
 <div align="center">
-  <h1 style='color: #007ec6;'>DLHTX</h1>
+  <h1 style=''><img with='30' height='30' src='http://dlhtx.zicp.vip:3000/img/logo.png'> </img>DLHTX</h1>
 
   <p>DLHTX是一款基于<span style='color: rgba(65, 184, 131, 1);background: rgb(228, 228, 228);padding: 0 4px;'>vue</span>和<span>nodejs</span>搭建的个人独立博客系统。 </p>
   
-  <a href="">
-	<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square">
-	</a>
-  <a href="">
-      <img alt="Codecov" src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js">
-  </a>
-</div>
-<br>
-<img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png' style='box-shadow: 0px 9px 33px 2px #929292;'></img>
-<br>
+<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square" style='display: inline;'></img> <img alt="Codecov" src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js" style='display: inline;'></img>
 
+<img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png'></img>
+</div>
 
 ## 预览地址
 [DLHTX博客园](http://dlhtx.zicp.vip:9090)
