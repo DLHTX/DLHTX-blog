@@ -3,7 +3,7 @@
 
 DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。 
   
-![coverage](https://img.shields.io/badge/coverage-98-green?style=flat-square) ![正常大小的矩形](https://img.shields.io/badge/version-1.0.2-blue?style=flat-square) ![正常大小的矩形](https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js) ![正常大小的矩形](https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square) 
+![coverage](https://img.shields.io/badge/coverage-98-green?style=flat-square)  ![正常大小的矩形](https://img.shields.io/badge/version-1.0.2-blue?style=flat-square)  ![正常大小的矩形](https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js)  ![正常大小的矩形](https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square) 
 
 <img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png' style='box-shadow: 0px 9px 33px 2px #929292;'></img>
 
