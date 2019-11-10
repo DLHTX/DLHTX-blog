@@ -1,7 +1,7 @@
 <div align="center">
   <h1 style='color: #007ec6;'>DLHTX</h1>
 
-  <p>DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。 </p>
+  <p>DLHTX是一款基于<span>vue</span>和<span>nodejs</span>搭建的个人独立博客系统。 </p>
   
   <a href="">
 	<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square">
