@@ -1,5 +1,5 @@
 <div align="center">
-  <p>DLHTX</p>
+  <h1 style='color: #007ec6;'>DLHTX</h1>
   <br>
   <p>DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。 </p>
   
@@ -16,9 +16,7 @@
       <img alt="Codecov" src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js">
   </a>
 </div>
-
-
-
+<br>
 <img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png' style='box-shadow: 0px 9px 33px 2px #929292;'></img>
 
 ## 预览地址
