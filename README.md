@@ -1,23 +1,7 @@
-div align="center">
+<div align="center">
   <a href="https://github.com/DLHTX/DLHTX-blog/">
-    <img src="https://github.com/typeorm/typeorm/raw/master/resources/logo_big.png" width="492" height="228">
+    <img src="http://dlhtx.zicp.vip:3000/img/1573360122165*image.png" width="492" height="228">
   </a>
-  <br>
-  <br>
-	<a href="https://github.com/DLHTX/DLHTX-blog/">
-		<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square">
-	</a>
-	<a href="https://github.com/DLHTX/DLHTX-blog/">
-		<img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square">
-	</a>
-	<a href="https://github.com/DLHTX/DLHTX-blog/">
-		<img src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js">
-	</a>
-    <a href="https://github.com/DLHTX/DLHTX-blog/">
-        <img alt="Codecov" src="https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square">
-    </a>
-  <br>
-  <br>
 </div>
 
 # DLHTX
