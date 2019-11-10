@@ -1,10 +1,10 @@
 <div align="center">
   <h1 style='color: #007ec6;'>DLHTX</h1>
-  <br>
+
   <p>DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。 </p>
   
   <a href="">
-		<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square">
+	<img src="https://img.shields.io/badge/coverage-98-green?style=flat-square">
 	</a>
 	<a href="">
 		<img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square">
@@ -18,7 +18,7 @@
 </div>
 <br>
 <img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png' style='box-shadow: 0px 9px 33px 2px #929292;'></img>
-
+<br>
 ## 预览地址
 [DLHTX博客园](http://dlhtx.zicp.vip:9090)
 
