@@ -1,0 +1,37 @@
+import { BlogCollectDto } from '../../dto/blog/blogCollect.dto';
+import { BlogIdDto } from '../../dto/blog/blogId.dto';
+import { ClassNameDto } from '../../dto/blog/className.dto';
+import { BlogClass } from '../../dto/blog/blogClass.dto';
+import { FindBlogDto } from '../../dto/blog/findBlog.dto';
+import { AllBlogDto } from '../../dto/blog/allBlog.dto';
+import { BlogUserNameDto } from '../../dto/blog/blogUserName.dto';
+import { UpdateBlogDto } from '../../dto/blog/updateBlog.dto';
+import { BlogDto } from '../../dto/blog/blog.dto';
+import { BlogService } from './blog.service';
+export declare class BlogController {
+    private blogService;
+    constructor(blogService: BlogService);
+    addBlog(blog: BlogDto): Promise<any>;
+    updateBlog(blog: UpdateBlogDto): Promise<any>;
+    deleteBlog(blog: BlogIdDto): Promise<any>;
+    findBlogByUsername(blog: BlogUserNameDto): Promise<any>;
+    findAllBlogAndCommit(param: AllBlogDto): Promise<any>;
+    searchBlogbyTitleAndBody(param: FindBlogDto): Promise<any>;
+    findAllBlogByclassName(param: BlogClass): Promise<any>;
+    findBlogByBlogId(param: BlogIdDto): Promise<any>;
+    findBlogClass(param: any): Promise<any>;
+    addBlogClass(param: ClassNameDto): Promise<any>;
+    deleteBlogClass(param: ClassNameDto): Promise<any>;
+    findBlogByClassName(param: ClassNameDto): Promise<any>;
+    addReadCount(param: BlogIdDto): Promise<any>;
+    addCollect(param: BlogCollectDto): Promise<any>;
+    cancelCollect(param: BlogCollectDto): Promise<any>;
+    addFabulous(param: BlogCollectDto): Promise<any>;
+    cancelFabulous(param: BlogCollectDto): Promise<any>;
+    findCollectAndFab(param: BlogCollectDto): Promise<any>;
+    findBlogCommitByBlogId(param: BlogIdDto): Promise<any>;
+    findFabByUsername(param: BlogUserNameDto): Promise<any>;
+    findCollectByUserName(param: BlogUserNameDto): Promise<any>;
+    findNext(param: BlogIdDto): Promise<any>;
+    findPre(param: BlogIdDto): Promise<any>;
+}
