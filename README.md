@@ -7,7 +7,7 @@
 </div>
 
 ## Demo&简介
-- DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。
+- DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。写博客无需在后台写,只要登录博客就可以直接写博客
 - [http://dlhtx.zicp.vip](http://dlhtx.zicp.vip:9090)
 - 后台api [预览地址](http://dlhtx.zicp.vip:3000/api)
 
