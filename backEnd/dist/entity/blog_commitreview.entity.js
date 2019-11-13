@@ -35,10 +35,6 @@ __decorate([
 __decorate([
     typeorm_1.Column({ type: "varchar", length: 255, nullable: true }),
     __metadata("design:type", String)
-], Blog_commitreview.prototype, "fromUserImg", void 0);
-__decorate([
-    typeorm_1.Column({ type: "varchar", length: 255, nullable: true }),
-    __metadata("design:type", String)
 ], Blog_commitreview.prototype, "fromUser", void 0);
 Blog_commitreview = __decorate([
     typeorm_1.Entity()

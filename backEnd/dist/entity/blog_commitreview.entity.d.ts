@@ -4,6 +4,5 @@ export declare class Blog_commitreview {
     commitId: number;
     reviewBody: string;
     toUser: string;
-    fromUserImg: string;
     fromUser: string;
 }

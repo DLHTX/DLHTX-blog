@@ -2250,7 +2250,7 @@
         "signature": "24b22e74f03be1df622ac4a9491abd975320dd708960c5c235d238d3db2dd0a9"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/blog/blog.service.ts": {
-        "version": "b188c1a37510e4425872f160199e99466983a0d78b71b07a4ec5667b529dd102",
+        "version": "fbd980f7444f2eb942eb58d974ac3bc765799e89d1ca8eb530cba0bed1efd206",
         "signature": "06a71ae4d7d4e6f6395c4685a8a4c713af5e01f11d7295c9050e6c435d63233c"
       },
       "d:/项目文件夹/nestjs_blog/node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -2298,7 +2298,7 @@
         "signature": "7ed86b1b0f38b5cd3a584c86634bd7cd8805d043633990868c78c00429089ffa"
       },
       "d:/项目文件夹/nestjs_blog/src/config.ts": {
-        "version": "86ddbcd53af72bec9cd08e3b7172caced9c2399a7a3de95e785d3de14476b229",
+        "version": "3dcf4b8780df555ddfaa83be7698a8e1e38a4c4725aea30d70a43f90aa9e2ced",
         "signature": "fbd8ac16a2524e1cf979fc9edc833a002e21a4c3bbe56befceba5d32b11b2d8c"
       },
       "d:/项目文件夹/nestjs_blog/src/config/mail.config.ts": {
@@ -2306,7 +2306,7 @@
         "signature": "23df5a0568e306389632e75612de62bdf2d3e9a917dfa39a6ea260bb136ab5b4"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/user/user.service.ts": {
-        "version": "bbdad2f46fcd8c8812cb0c67717ebf607f3ab19da7d9ca8075b205d294488c9b",
+        "version": "38ee8e14cd4bec7a42a2da0a7e75cad2896b1eacdb89184294ed1914abc8b639",
         "signature": "76e105d89591beea42e2a9a8908c603ff535b2181f040257c7dbc699575010fd"
       },
       "d:/项目文件夹/nestjs_blog/src/middleware/auth.middleware.ts": {
@@ -2314,7 +2314,7 @@
         "signature": "886db41e84bc7f2993e7ce0f10d5bea0b9fed207c52515407bc6dd07ebb1c206"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/user/user.controller.ts": {
-        "version": "48eabcc12e871e70cdd55bf6bb78d440ef116076662f396968e6bf2f516e2eb7",
+        "version": "8bf9160d1c8785f4d1f2cdae77fbb05de17b61bf2ae9e24c6ff9c895acade84a",
         "signature": "635bc38fc48336aa7a33ed027ad671d24a936c7438b3be46795a73d8bb459490"
       },
       "d:/项目文件夹/nestjs_blog/src/entity/blog_commit.entity.ts": {
@@ -2334,8 +2334,8 @@
         "signature": "1b5d8d3ef1afcb426a0f443a2a8823aa86e682db7ec424c8d84f402a519bb83f"
       },
       "d:/项目文件夹/nestjs_blog/src/entity/blog_commitreview.entity.ts": {
-        "version": "d53827f521f716350b343ce85b66e46d576eec0b0632b470382e8d6ee193bbf3",
-        "signature": "988cae6025f24a4feec3681c77f94861af0731da65e6166c164f5faac8eaa495"
+        "version": "74f2cc7eb737d46691cfb8a961673dda11710ce2d3fa0101464b1c3e5dc7f6a0",
+        "signature": "441ac40e7df3d81a733546f8f4f8ac0846286749401aea3ba02055aa5e7efe3a"
       },
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
         "version": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
@@ -2394,11 +2394,11 @@
         "signature": "ba21abb6befd4a5f56cbbd1981e480d10ac7ffa9b8340aa74c7cf397fc4b8b97"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/commit/commit.service.ts": {
-        "version": "a4f96617feed650776a75c962431412d4f422e6f49642bf410d036514fecc01b",
+        "version": "c880f65e6365191977667465dc83c85342ca9a7d084d9c60fb89106a8974ada3",
         "signature": "446a00ae51a0785dc89d03d905bbad5fb23d5a439d18aea9844d9e24f2cf6dba"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/commit/commit.controller.ts": {
-        "version": "171bd33f7765332a20eee216dfb2a0b07e42d807e28554c82478e940a5ad73fa",
+        "version": "421be3b94ca524206efb19977bdf32f24005f8ffc6c43147302e075fc2c89843",
         "signature": "4e456a654d51986508aa30982f9b033cd324200bb99e11784b420741a2b6365a"
       },
       "d:/项目文件夹/nestjs_blog/src/controller/file/file.service.ts": {
@@ -2478,7 +2478,7 @@
         "signature": "c25d6d40543a2a72b2ec9b5f74abc2c4d7dc525bff90a92818388c08052122dc"
       },
       "d:/项目文件夹/nestjs_blog/src/app.module.ts": {
-        "version": "8268acec62533a360a0c493c9c76fbf0b8a824da1d0263a90e86f3339bfead46",
+        "version": "14f2c42146978c43c475a2e9dbf6ffa697c5a5b0973b0c35e13e31a26a237af0",
         "signature": "843f051400e86a3e4de923e5b7271bfa660bd889abf5fee0dce89d6ded83b42c"
       },
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/core/adapters/index.d.ts": {
@@ -6734,7 +6734,6 @@
         "d:/项目文件夹/nestjs_blog/src/controller/commit/commit.service.ts",
         "d:/项目文件夹/nestjs_blog/src/controller/file/file.controller.ts",
         "d:/项目文件夹/nestjs_blog/src/controller/file/file.service.ts",
-        "d:/项目文件夹/nestjs_blog/src/config.ts",
         "d:/项目文件夹/nestjs_blog/node_modules/@types/node/util.d.ts",
         "d:/项目文件夹/nestjs_blog/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -12073,6 +12072,7 @@
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/platform-express/multer/multer.module.d.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/platform-express/multer/index.d.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/platform-express/index.d.ts",
+      "d:/项目文件夹/nestjs_blog/src/controller/file/file.controller.ts",
       "d:/项目文件夹/nestjs_blog/src/app.module.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/core/adapters/index.d.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@nestjs/core/constants.d.ts",
@@ -12145,8 +12145,7 @@
       "d:/项目文件夹/nestjs_blog/node_modules/@types/superagent/index.d.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@types/supertest/index.d.ts",
       "d:/项目文件夹/nestjs_blog/node_modules/@types/yargs-parser/index.d.ts",
-      "d:/项目文件夹/nestjs_blog/node_modules/@types/yargs/index.d.ts",
-      "d:/项目文件夹/nestjs_blog/src/controller/file/file.controller.ts"
+      "d:/项目文件夹/nestjs_blog/node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.4.3"

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/> -->
+    <!-- <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn.js 实现翻书效果</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <style src='//at.alicdn.com/t/font_1004733_x92wiv5gm8l.css'></style> -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1004733_x92wiv5gm8l.css">
+</head>
+
+<body>
+    <div class="shade">
+        <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+        <div class="number"></div>
+    </div>
+
+
+    <div class="flipbook-viewport">
+        <div style="     text-align: center;   width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 99999;
+        background-size: cover;    height: 65px;
+    line-height: 65px;">
+            <span onclick='suoxiao()'>
+                <i class='iconfont icon-suoxiao' style="margin: 0 10px;font-size: 33px;
+            color: #a0a0a0;"></i>
+            </span>
+            <span><span id='currentPage'>0</span>/<span id='totalPage'>0</span></span>
+            <span onclick='fangda()'>
+                <i class='iconfont   icon-zoomIn' style="font-size: 36px;
+                color: #a0a0a0;"></i>
+            </span>
+
+            <i class='iconfont icon-iconfront-1' style="float: right;
+            font-size: 42px;
+            font-weight: 600;
+            color: #8c8c8c;
+            margin-right: 25px;" onclick='right()'></i>
+            
+            <i class='iconfont icon-iconfront-' style="float: left;
+            font-size: 42px;
+            font-weight: 600;
+            color: #8c8c8c;
+            margin-left: 25px;" onclick='left()'></i>
+
+        </div>
+        <!-- <div class="previousPage"></div>
+        <div class="nextPage"></div>
+        <div class="return"></div> -->
+        <!-- <img class="btnImg" src="./image/btn.gif" style="display: block!important" /> -->
+        <div class="container">
+            <div class="flipbook">
+            </div>
+        </div>
+    </div>
+    <script>
+        //自定义仿iphone弹出层
+        (function($) {
+            //ios confirm box
+            jQuery.fn.confirm = function(title, option, okCall, cancelCall) {
+                var defaults = {
+                    title: null, //what text
+                    cancelText: '取消', //the cancel btn text
+                    okText: '确定' //the ok btn text
+                };
+
+                if (undefined === option) {
+                    option = {};
+                }
+                if ('function' != typeof okCall) {
+                    okCall = $.noop;
+                }
+                if ('function' != typeof cancelCall) {
+                    cancelCall = $.noop;
+                }
+
+                var o = $.extend(defaults, option, { title: title, okCall: okCall, cancelCall: cancelCall });
+
+                var $dom = $(this);
+
+                var dom = $('<div class="g-plugin-confirm">');
+                var dom1 = $('<div>').appendTo(dom);
+                var dom_content = $('<div>').html(o.title).appendTo(dom1);
+                var dom_btn = $('<div>').appendTo(dom1);
+                var btn_cancel = $('<a href="#"></a>').html(o.cancelText).appendTo(dom_btn);
+                var btn_ok = $('<a href="#"></a>').html(o.okText).appendTo(dom_btn);
+                btn_cancel.on('click', function(e) {
+                    o.cancelCall();
+                    dom.remove();
+                    e.preventDefault();
+                });
+                btn_ok.on('click', function(e) {
+                    o.okCall();
+                    dom.remove();
+                    e.preventDefault();
+                });
+
+                dom.appendTo($('body'));
+                return $dom;
+            };
+        })(jQuery);
+
+
+        showpage()
+
+        function showpage() {
+            setInterval(() => {
+                var pageCount = $(".flipbook").turn("pages"); //总页数
+                var currentPage = $(".flipbook").turn("page"); //当前页
+                $('#currentPage').text(currentPage)
+                $('#totalPage').text(pageCount)
+            }, 1000)
+        }
+
+        function right() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            console.log($(`.p${currentPage}`).css('background-position-x'))
+            if ($(`.p${currentPage}`).css('background-position-x').replace('%', '') >= 100) {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-position-x').replace('%', ''))
+                present = present + 20
+                $(`.p${currentPage}`).css('background-position-x', `${present}%`)
+            }
+        }
+
+        function left() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            console.log($(`.p${currentPage}`).css('background-position-x'))
+            if ($(`.p${currentPage}`).css('background-position-x').replace('%', '') <= 0) {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-position-x').replace('%', ''))
+                present = present - 20
+                $(`.p${currentPage}`).css('background-position-x', `${present}%`)
+            }
+        }
+
+        function suoxiao() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            console.log($(`.p${currentPage}`))
+            if ($(`.p${currentPage}`).css('background-size') <= '100%') {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-size').replace('%', ''))
+                present -= 20
+                $(`.p${currentPage}`).css('background-size', `${present}%`)
+            }
+        }
+
+        function fangda() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            console.log($(`.p${currentPage}`))
+
+            if ($(`.p${currentPage}`).css('background-size') >= '200%') {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-size').replace('%', ''))
+                present += 20
+                $(`.p${currentPage}`).css('background-size', `${present}%`)
+            }
+        }
+        //上一页 修改为缩小
+        $(".previousPage").bind("touchend", function() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            if ($(`.p${currentPage}`).css('background-size') <= '100%') {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-size').replace('%', ''))
+                present -= 20
+                $(`.p${currentPage}`).css('background-size', `${present}%`)
+            }
+            // if (currentPage >= 2) {
+            //     $(".flipbook").turn('page', currentPage - 1);
+            // } else {}
+        });
+        // 下一页 修改为放个大
+        $(".nextPage").bind("touchend", function() {
+            var pageCount = $(".flipbook").turn("pages"); //总页数
+            var currentPage = $(".flipbook").turn("page"); //当前页
+            console.log($(`.p${currentPage}`).css('background-size'))
+            if ($(`.p${currentPage}`).css('background-size') >= '200%') {
+                return
+            } else {
+                var present = Number($(`.p${currentPage}`).css('background-size').replace('%', ''))
+                present += 20
+                $(`.p${currentPage}`).css('background-size', `${present}%`)
+            }
+
+            // if (currentPage <= pageCount) {
+            //     $(".flipbook").turn('page', currentPage + 1);
+            // } else {
+            // }
+        });
+        //返回到目录页
+        $(".return").bind("touchend", function() {
+            $(document).confirm('您确定要返回首页吗?', {}, function() {
+                $(".flipbook").turn('page', 1); //跳转页数
+            }, function() {});
+        });
+    </script>
+</body>
+
+</html>

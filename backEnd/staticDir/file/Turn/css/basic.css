@@ -1,0 +1,376 @@
+/* Basic sample */
+
+body{
+	overflow:hidden;
+	background-color: #ffffff;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.flipbook-viewport{
+	overflow:hidden;
+	width:100%;
+	height:100%;
+}
+
+.flipbook-viewport .container{
+}
+
+.flipbook-viewport .flipbook{
+	
+}
+
+.flipbook-viewport .page{
+	width:461px;
+	height:600px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+.flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.flipbook-viewport .page img{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:0;
+}
+
+.flipbook-viewport .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
+
+@-webkit-keyframes reverseRotataZ{
+	0%{-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(-360deg);}
+}
+@-webkit-keyframes rotataZ{
+	0%{-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(360deg);}
+}
+
+.pull-left {position:absolute;bottom:5%;right:0;overflow:hidden;width:240px; height:200px; }/*  |xGv00|e69d3d10a97baed58b34702fd0b01ff5 */
+
+
+.loadinner{
+    position:absolute;
+    width:76%;
+    height:100%;
+    margin-left:-38%;
+    left:50%;
+    text-align:center;
+    font-size:11px;
+    line-height:20px;
+}
+.graph{
+    background:#6c6c6c;
+    width:70%;
+    margin:10px auto 0 auto;
+}
+#bar{
+    display:block;
+    background:#f1f1f1;
+    height:3px;
+    width:10px;
+}
+#diary{width:70%;margin:0 auto;}
+#chupin{width:100%;position:absolute;bottom:80px;}
+#cpright{position:absolute;bottom:50px;color:#757575;font-size:9px;text-align:center;width:100%;letter-spacing: -1px;word-spacing: -1px;}
+#btns{position:absolute;left:50%;top:15%;width:44%;margin:0 0 0 -22%;z-index:999;}
+#btns button,#btns a{line-height:36px;background: #1ea5d2;border: 1px solid #fcfcfc;color:#404040;width:100%;height:36px;font-size:17px;font-family:"微软雅黑";display:block;text-decoration:none;text-align:center;}
+
+.shade{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 1000008;
+	/*background-color: rgba(0 ,0, 0, 0.5);*/
+	/*border: 1px solid red;*/
+}
+
+/*环形进度条*/
+
+.loadingImg{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 1%;
+	left: 42%;
+}
+
+.sk-fading-circle {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 32%;
+	left: 40%;
+}
+
+.sk-fading-circle .sk-circle {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 15%;
+	height: 15%;
+	background-color: #ffffff;
+	border-radius: 100%;
+	-webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+	animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.sk-fading-circle .sk-circle2 {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.sk-fading-circle .sk-circle3 {
+	-webkit-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+.sk-fading-circle .sk-circle4 {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.sk-fading-circle .sk-circle5 {
+	-webkit-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	transform: rotate(120deg);
+}
+.sk-fading-circle .sk-circle6 {
+	-webkit-transform: rotate(150deg);
+	-ms-transform: rotate(150deg);
+	transform: rotate(150deg);
+}
+.sk-fading-circle .sk-circle7 {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.sk-fading-circle .sk-circle8 {
+	-webkit-transform: rotate(210deg);
+	-ms-transform: rotate(210deg);
+	transform: rotate(210deg);
+}
+.sk-fading-circle .sk-circle9 {
+	-webkit-transform: rotate(240deg);
+	-ms-transform: rotate(240deg);
+	transform: rotate(240deg);
+}
+.sk-fading-circle .sk-circle10 {
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+.sk-fading-circle .sk-circle11 {
+	-webkit-transform: rotate(300deg);
+	-ms-transform: rotate(300deg);
+	transform: rotate(300deg);
+}
+.sk-fading-circle .sk-circle12 {
+	-webkit-transform: rotate(330deg);
+	-ms-transform: rotate(330deg);
+	transform: rotate(330deg);
+}
+.sk-fading-circle .sk-circle2:before {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+.sk-fading-circle .sk-circle3:before {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+}
+.sk-fading-circle .sk-circle4:before {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+.sk-fading-circle .sk-circle5:before {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+.sk-fading-circle .sk-circle6:before {
+	-webkit-animation-delay: -0.7s;
+	animation-delay: -0.7s;
+}
+.sk-fading-circle .sk-circle7:before {
+	-webkit-animation-delay: -0.6s;
+	animation-delay: -0.6s;
+}
+.sk-fading-circle .sk-circle8:before {
+	-webkit-animation-delay: -0.5s;
+	animation-delay: -0.5s;
+}
+.sk-fading-circle .sk-circle9:before {
+	-webkit-animation-delay: -0.4s;
+	animation-delay: -0.4s;
+}
+.sk-fading-circle .sk-circle10:before {
+	-webkit-animation-delay: -0.3s;
+	animation-delay: -0.3s;
+}
+.sk-fading-circle .sk-circle11:before {
+	-webkit-animation-delay: -0.2s;
+	animation-delay: -0.2s;
+}
+.sk-fading-circle .sk-circle12:before {
+	-webkit-animation-delay: -0.1s;
+	animation-delay: -0.1s;
+}
+
+@-webkit-keyframes sk-circleFadeDelay {
+	0%, 39%, 100% { opacity: 0; }
+	40% { opacity: 1; }
+}
+
+@keyframes sk-circleFadeDelay {
+	0%, 39%, 100% { opacity: 0; }
+	40% { opacity: 1; }
+}
+
+/*进度数字*/
+.number{
+	width: 15%;
+	height: 10%;
+	position: fixed;
+	top: 47%;
+	left: 45%;
+	z-index: 1000009;
+	color: #ffffff;
+	/* border: 1px solid red; */
+}
+
+
+/*上一页*/
+.previousPage{
+	width: 16%;
+	height: 20%;
+	position: fixed;
+	top: 80%;
+	left: 22%;
+	z-index: 999999;
+	/*border:1px solid red;*/
+	background: transparent !important;
+}
+/*返回目录页按钮*/
+.return{
+	width: 16%;
+	height: 20%;
+	position: fixed;
+	top: 80%;
+	left: 40%;
+	z-index: 999999;
+	/*border:1px solid blue;*/
+	background: transparent !important;
+}
+
+/*下一页*/
+.nextPage{
+	width: 16%;
+	height: 20%;
+	position: fixed;
+	top: 80%;
+	left: 58%;
+	z-index: 999999;
+	/*border:1px solid red;*/
+	background: transparent !important;
+}
+
+
+.btnImg{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 99999;
+	background-size: cover;
+	point-events:none;
+}
+
+/*弹出窗口*/
+.g-plugin-confirm {
+	position: fixed;
+	z-index: 9999999999999;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*background: rgba(0, 0, 0, 0.1);*/
+	background-color: rgba(0 ,0, 0, 0.35);
+	justify-content: center;
+	align-items: center;
+}
+/* line 397, global.sass */
+.g-plugin-confirm > div {
+	background: rgba(255, 255, 255, 0.9);
+	width: 80%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+/* line 402, global.sass */
+.g-plugin-confirm > div > div:nth-child(1) {
+	text-align: center;
+	color: black;
+	padding: 22px;
+}
+/* line 406, global.sass */
+.g-plugin-confirm > div > div:nth-child(2) {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	border-top: 1px solid #cbcbd1;
+}
+/* line 409, global.sass */
+.g-plugin-confirm > div > div:nth-child(2) a {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	border-right: 1px solid #cbcbd1;
+	text-align: center;
+	padding: 8px 0;
+	color: #3bbec0;
+	font-size: 22px;
+	text-decoration: none;
+}
+/* line 416, global.sass */
+.g-plugin-confirm > div > div:nth-child(2) a:last-child {
+	border-right: 0;
+}

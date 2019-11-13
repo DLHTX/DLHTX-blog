@@ -52,12 +52,12 @@ let CommitService = class CommitService {
     }
     async reviewCommit(param) {
         try {
-            let res = await this.commitRepository.query(`INSERT INTO blog_commitReview(commitId,reviewBody,toUser,fromUser,fromUserImg) VALUES (${param.commitId},'${param.commitBody}','${param.toUser}','${param.fromUser}','${param.fromUserImg}')`);
+            let res = await this.commitRepository.query(`INSERT INTO blog_commitreview(commitId,reviewBody,toUser,fromUser) VALUES (${param.commitId},'${param.commitBody}','${param.toUser}','${param.fromUser}')`);
             if (res) {
                 let res2 = await this.commitRepository.query(`SELECT mail FROM user where name = '${param.toUser}'`);
                 var mails = res2[0].mail;
                 let mailParam = {
-                    toName: param.toUser,
+                    toName: param.fromUser,
                     toMail: mails,
                     type: '回复提醒',
                     href: param.href
@@ -83,7 +83,7 @@ let CommitService = class CommitService {
         try {
             let res = await this.commitRepository.query(`DELETE FROM blog_commit WHERE id = ${param.id}`);
             if (res) {
-                let res2 = await this.commitRepository.query(`DELETE FROM blog_commitReview WHERE commitId = ${param.id}`);
+                let res2 = await this.commitRepository.query(`DELETE FROM blog_commitreview WHERE commitId = ${param.id}`);
                 return {
                     success: true,
                     msg: '删除成功'
@@ -99,7 +99,7 @@ let CommitService = class CommitService {
     }
     async deleteCommitReview(param) {
         try {
-            let res = await this.commitRepository.query(`DELETE FROM blog_commitReview WHERE review_id = ${param.id}`);
+            let res = await this.commitRepository.query(`DELETE FROM blog_commitreview WHERE review_id = ${param.id}`);
             if (res) {
                 return {
                     success: true,

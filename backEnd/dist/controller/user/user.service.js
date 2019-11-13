@@ -103,7 +103,7 @@ let UserService = class UserService {
             if (userParam) {
                 if (userParam.password == user.password) {
                     const user = { name: userParam.name, password: userParam.password };
-                    const accessToken = jwt.sign(user, 'secretKey', { expiresIn: 3600 });
+                    const accessToken = jwt.sign(user, 'secretKey', { expiresIn: 259200 });
                     console.log(accessToken);
                     userParam.accessToken = accessToken;
                     return {
@@ -180,6 +180,7 @@ let UserService = class UserService {
         });
     }
     async changeHeadImg(param) {
+        console.log(param);
         try {
             let res = await this.userRepository.query(`UPDATE user SET headImg = '${param.headImg}' WHERE user.name = '${param.userName}' and user.password= '${param.password}'`);
             if (res) {

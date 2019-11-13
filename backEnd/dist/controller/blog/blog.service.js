@@ -337,7 +337,7 @@ let BlogService = class BlogService {
     }
     async findBlogCommitByBlogId(param) {
         try {
-            let res = await this.blogRepository.query(`select blog_commit.id,blog_commit.blogId,blog_commit.update_time,blog_commit.commitBody,blog_commitReview.*, user.name,user.headImg,user.sex,user.nickName from (blog_commit left join blog_commitReview on blog_commit.id=blog_commitReview.commitId)  left join user on blog_commit.commitName=user.name where blogId = ${param.blogId}`);
+            let res = await this.blogRepository.query(`select * from (select blog_commit.id,blog_commit.blogId,blog_commit.update_time,blog_commit.commitBody,blog_commitreview.*, user.name,user.headImg,user.sex,user.nickName from (blog_commit left join blog_commitreview on blog_commit.id=blog_commitreview.commitId)  left join user on blog_commit.commitName = user.name where blogId = ${param.blogId} ) as table1 LEFT JOIN (SELECT user.headImg as fromUserImg,user.name as fromUserName from user) as table2 on table1.fromUser = table2.fromUserName `);
             if (res) {
                 return { success: true, data: res };
             }
@@ -379,7 +379,7 @@ let BlogService = class BlogService {
     }
     async findNext(param) {
         try {
-            let res = await this.blogRepository.query(`SELECT * FROM blog WHERE blogId < ${param.blogId} and showIndex = 1 ORDER BY creat_time desc limit 1`);
+            let res = await this.blogRepository.query(`SELECT * FROM blog WHERE blogId < ${param.blogId} and showIndex = 1 ORDER BY blogId desc limit 1`);
             if (res) {
                 return { success: true, data: res };
             }
@@ -393,7 +393,7 @@ let BlogService = class BlogService {
     }
     async findPre(param) {
         try {
-            let res = await this.blogRepository.query(`SELECT * FROM blog WHERE blogId > ${param.blogId} and showIndex = 1 ORDER BY creat_time desc limit 1`);
+            let res = await this.blogRepository.query(`SELECT * FROM blog WHERE blogId > ${param.blogId} and showIndex = 1 ORDER BY blogId limit 1`);
             if (res) {
                 return { success: true, data: res };
             }

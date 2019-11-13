@@ -27,7 +27,6 @@ const commit_controller_1 = require("./controller/commit/commit.controller");
 const commit_service_1 = require("./controller/commit/commit.service");
 const file_controller_1 = require("./controller/file/file.controller");
 const file_service_1 = require("./controller/file/file.service");
-const config_1 = require("./config");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer
@@ -42,7 +41,15 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     common_1.Module({
         imports: [
-            typeorm_1.TypeOrmModule.forRoot(config_1.config.dbConfig),
+            typeorm_1.TypeOrmModule.forRoot({
+                type: 'mysql',
+                host: 'localhost',
+                port: 3306,
+                username: 'root',
+                password: '106111',
+                database: 'mytest',
+                entities: [__dirname + '/**/*.entity{.ts,.js}'], synchronize: true,
+            }),
             typeorm_1.TypeOrmModule.forFeature([user_entity_1.User, blog_entity_1.Blog, blog_commit_entity_1.Blog_commit, blog_readIp_entity_1.Blog_readIp, blog_collect_entity_1.Blog_collect, blog_fabulous_entity_1.Blog_fabulous, blog_commitreview_entity_1.Blog_commitreview, blog_class_entity_1.Blog_class]),
             common_1.HttpModule
         ],

@@ -38,6 +38,7 @@ let UserController = class UserController {
         return await this.userService.changeHeadImg(user);
     }
     async updatedUserInfo(user) {
+        console.log(user);
         return await this.userService.updatedUserInfo(user);
     }
     async getToken(param) {
@@ -91,7 +92,7 @@ __decorate([
 __decorate([
     common_1.Post('/changeHeadImg'),
     swagger_1.ApiOperation({ title: '更改用户头像' }),
-    __param(0, common_1.Query()),
+    __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [changeInfo_dto_1.ChangeInfoDto]),
     __metadata("design:returntype", Promise)
@@ -99,7 +100,7 @@ __decorate([
 __decorate([
     common_1.Post('/updatedUserInfo'),
     swagger_1.ApiOperation({ title: '更改用户信息' }),
-    __param(0, common_1.Query()),
+    __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [userInfo_dto_1.UserInfoDto]),
     __metadata("design:returntype", Promise)
