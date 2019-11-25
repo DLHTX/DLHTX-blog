@@ -37,8 +37,7 @@
 ## 前端运行(无后端版本)
 无后端版本是利用本项目自带的后台,可定制性较差.所有人都可用的后台,但是本项目的后台配置也很简单傻瓜式的,先把前台部署好吧~
 
-在文件夹`fontEnd`中就是你所需的前台代码,将`fontEnd`文件夹中的`index.html`和`static`部署到服务器的ngnix中或者其他网站服务器中,这一步很简单就不多说了
-
+在文件夹`fontEnd`中就是你所需的前台代码,将`fontEnd`文件夹中的`index.html`和`static`部署到服务器的ngnix中或者其他网站服务器中,这一步可以在这个教程中查看[Centos在Docker安装nginx和mysql](http://dlhtx.zicp.vip:9090/blogDetail?blogId=12476)
 
 ## 前端配置
 如果你想要个性化修改你的博客,本项目也提供了配置路径
