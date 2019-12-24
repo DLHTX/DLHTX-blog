@@ -3,6 +3,9 @@ const config = {
     title: 'DLHTX的博客园',
     indexDescription:'Your art blog repository.',//首页logo下面的描述
     indexLogo:'http://dlhtx.zicp.vip:3000/img/fontlogo.png',//首页logo
+    showVideo:false,//是否首页显示随机视频(默认否 显示随机图片)
+    showSearch:true,//是否显示搜索主页
+    dirShow:true,//是否显示侧边导航目录
   },
   head: { //头部导航栏配置
     logo:'http://dlhtx.zicp.vip:3000/img/logo.png',//导航栏logo

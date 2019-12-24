@@ -14,15 +14,15 @@
 
 ## 主要功能：
 - 文章，页面，分类目录，分类的添加，删除等。
-- 文章及页面支持`Markdown`，支持代码高亮。
+- 文章及页面支持`Markdown`，支持代码高亮。支持阅读文章导航功能
 - 支持文章全文搜索。
 - 完整的评论功能，包括发表回复评论，以及评论的邮件提醒，支持`Markdown`。
 - 基本信息功能,包含评论,点赞,收藏,查看数量的收集。
 - 支持Oauth登陆，GitHub。
 - 支持文章缓存，支持缓存自动刷新。
-- 支持登录注册功能,支持后端api鉴权功能
+- 支持登录注册功能,支持后端api鉴权功能。
 - 可展示的后端api REST风格列表[api](http://dlhtx.zicp.vip:3000/api)
-- 支持文件上传,下载功能
+- 支持文件上传,下载功能。
 
 ## 准备
  如果您想要搭建一个这样的博客那么你可能需要准备以下东西
@@ -37,7 +37,7 @@
 ## 前端运行(无后端版本)
 无后端版本是利用本项目自带的后台,可定制性较差.所有人都可用的后台,但是本项目的后台配置也很简单傻瓜式的,先把前台部署好吧~
 
-在文件夹`fontEnd`中就是你所需的前台代码,将`fontEnd`文件夹中的`index.html`和`static`部署到服务器的ngnix中或者其他网站服务器中,这一步可以在这个教程中查看[Centos在Docker安装nginx和mysql](http://dlhtx.zicp.vip:9090/blogDetail?blogId=12476)
+在文件夹`fontEnd`中就是你所需的前台代码,将`fontEnd`文件夹中的`index.html`和`static`部署到服务器的ngnix中或者其他网站服务器中,这一步可以在参考我写的这个教程中查看[Centos在Docker安装nginx和mysql](http://dlhtx.zicp.vip:9090/blogDetail?blogId=12476)
 
 ## 前端配置
 如果你想要个性化修改你的博客,本项目也提供了配置路径
@@ -50,6 +50,9 @@ const config = {
     title: 'DLHTX的博客园',
     indexDescription:'Your art blog repository.',//首页logo下面的描述
     indexLogo:'http://dlhtx.zicp.vip:3000/img/fontlogo.png',//首页logo
+    showVideo:false,//是否首页显示随机视频(默认否 显示随机图片)
+    showSearch:true,//是否显示搜索主页
+    dirShow:true,//是否显示侧边导航目录
   },
   head: { //头部导航栏配置
     logo:'http://dlhtx.zicp.vip:3000/img/logo.png',//导航栏logo
@@ -88,7 +91,6 @@ const config = {
 export {
   config
 }
-
 ```
 注释的很清楚咯
 
