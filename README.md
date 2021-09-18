@@ -3,13 +3,12 @@
 
 <img src="https://img.shields.io/badge/coverage-98-green?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square" style='display: inline;'></img> <img alt="Codecov" src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js" style='display: inline;'></img>
 
-<img src='http://dlhtx.zicp.vip:3000/img/1573359131966*1573352970(1).png'></img>
 </div>
 </div>
 
 ## Demo&简介
 - DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。写博客无需在后台写,只要登录博客就可以直接写博客
-- [http://dlhtx.zicp.vip](http://dlhtx.zicp.vip:9090)
+- [http://www.dlhtx.top](http://www.dlhtx.top:3000)
 - 后台api [预览地址](http://dlhtx.zicp.vip:3000/api)
 
 ## 主要功能：
