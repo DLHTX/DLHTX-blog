@@ -9,7 +9,7 @@
 ## Demo&简介
 - DLHTX是一款基于`vue`和`nodejs`搭建的个人独立博客系统。写博客无需在后台写,只要登录博客就可以直接写博客
 - [http://www.dlhtx.top](http://www.dlhtx.top:3000)
-- 后台api [预览地址](http://dlhtx.zicp.vip:3000/api)
+- 后台api [预览地址]((http://www.dlhtx.top:3000/api)
 
 ## 主要功能：
 - 文章，页面，分类目录，分类的添加，删除等。
