@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style=''><img with='30' height='30' src='http://dlhtx.zicp.vip:3000/img/logo.png'> </img>DLHTX</h1>
+  <h1 style=''>DLHTX</h1>
 
 <img src="https://img.shields.io/badge/coverage-98-green?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/version-1.0.2-blue?style=flat-square" style='display: inline;'></img> <img src="https://img.shields.io/badge/platform-pc&mobile-green?style=flat-square" style='display: inline;'></img> <img alt="Codecov" src="https://img.shields.io/badge/node->=6.0.0-brightgreen?style=flat-square&logo=node.js" style='display: inline;'></img>
 
